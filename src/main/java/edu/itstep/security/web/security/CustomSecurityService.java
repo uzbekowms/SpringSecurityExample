@@ -8,4 +8,5 @@ public class CustomSecurityService  {
     public boolean isNorm(int id) {
         return id % 2 == 0;
     }
+
 }
