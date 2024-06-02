@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: security-security
+  datasource:
+    url: jdbc:h2:mem:security-security
+    driverClassName: org.h2.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+security:
+  jwt:
+    signing:
+      key: 9800ddb8cf5676a2a1bd804e532e7b460c864e45c7879fcbc27283c54f0b2bef36f2e5a78d850e23efa4492346d5ef63cacaf4aaf8f5e6bcaff9fe2920d16b9b
+    expire:
+      time: 1800000
